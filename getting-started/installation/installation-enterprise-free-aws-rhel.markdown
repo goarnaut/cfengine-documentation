@@ -20,6 +20,8 @@ This tutorial will cover the following steps:
 4. Configuring the Firewall on the Policy Server.
 5. Installing CFEngine on both the Policy Server and Host Virtual Machines.
 
+The instructions that follow should require little to no prior knowledge of CFEngine, AWS, RHEL, Linux, or SSH.
+
 ## Initial Configuration of the Virtual Machines in AWS ##
 
 ### Configure 2 RHEL Virtual Machine Instances in AWS ###
@@ -146,7 +148,7 @@ The PuTTY interface with the two virtual machines saved. We can now proceed to c
 
 ### Login to Virtual Machines Using PuTTY ###
 
-* If one of the two virtual machines is configured and its details loaded in the PuTTY interface, first select the machine, then click the Open button. This will close the above PuTTY interface and open a command-line window, from which we will setup CFEngine on each of the two machines. One machine will act as the Server and the other as the client, and they will each be set up with different software.
+* If one of the two virtual machines is configured and its details loaded in the PuTTY interface, first select the machine, then click the Open button. This will close the above PuTTY interface and open a command-line window, where the setup of CFEngine will be initiated. One machine will act as the Server and the other as the client, and they will each will have a slightly different CFEngine setup.
 * Once the first virtual machine is logged into, right click the top of PuTTY's application window (e.g. the part of the window decoration displaying the virtual machine name).
 * In the contextual menu that then shows click New Session.
 * Select the second virtual machine entry in the Saved Sessions list.
